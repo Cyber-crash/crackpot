@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crackpot Cafe & Bistro | Newtown</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CRACKPOT</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#location">Find Us</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+            <h1>A little quirky,<br>a lot delicious.</h1>
+            <p>Experience Newtown's favorite bistro & workspace.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn-main">EXPLORE MENU</a>
+                <a href="#location" class="btn-outline">VISIT US</a>
+            </div>
+        </div>
+        <div class="hero-visual" data-aos="zoom-out" data-aos-duration="2000">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1500" alt="Cafe Interior">
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="menu-header-box" data-aos="fade-up">
+                <h2 class="section-title">The Gourmet Collection</h2>
+                <div class="filter-bar">
+                    <button class="filter-btn active" onclick="filterMenu('all', event)">ALL Items</button>
+                    <button class="filter-btn" onclick="filterMenu('veg', event)">VEG</button>
+                    <button class="filter-btn" onclick="filterMenu('non-veg', event)">NON-VEG</button>
+                    <button class="filter-btn" onclick="filterMenu('drinks', event)">BEVERAGES</button>
+                </div>
+            </div>
+
+            <div class="menu-list-container" id="full-menu-grid">
+                </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title" style="color: white;">What Guests Say</h2>
+            <div class="review-slider">
+                <div class="review-card">
+                    <p>"The ambience everything was great and the songs being played was icing on the cake. Marshmallow hot chocolate was yummy!"</p>
+                    <h4>- Priya Biswas</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location-section">
+        <div class="footer-grid">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Visit Crackpot</h3>
+                <p>DD 116, Street Number 269, DD Block(Newtown),<br>Action Area 1D, West Bengal 700156</p>
+                <p><strong>Call:</strong> 079809 20418</p>
+                <p><strong>Hours:</strong> Open 9 am Tue - Sun</p>
+            </div>
+            <div class="map-box" data-aos="fade-left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.123456789!2d88.47!3d22.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02753518340799%3A0x6b87648347209e5!2sCrackpot%20Cafe%20%26%20Bistro!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
